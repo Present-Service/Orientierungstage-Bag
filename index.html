@@ -57,6 +57,29 @@
     font-size:0.85rem;
     font-weight:600;
   }
+  .nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+  }
+  .lang-switch{
+    display:flex;
+    gap:10px;
+    font-size:0.8rem;
+    font-weight:700;
+  }
+  .lang-switch a{
+    color:var(--sage);
+    text-decoration:none;
+  }
+  .lang-switch a.active{
+    color:var(--cream);
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  @media (max-width:560px){
+    .nav-tag{display:none;}
+  }
 
   /* HERO */
   .hero{
@@ -311,7 +334,14 @@
   <div class="nav">
     <div class="wrap">
       <span class="wordmark"><img src="logo-cream.png" alt="Adulteen – Adulting. Kinda."></span>
-      <span class="nav-tag">OT-Bag Bestellung</span>
+      <div class="nav-right">
+        <span class="nav-tag">OT-Bag Bestellung</span>
+        <div class="lang-switch">
+          <a href="index.html" class="active">DE</a>
+          <a href="index-fr.html">FR</a>
+          <a href="index-it.html">IT</a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -336,7 +366,7 @@
         <div class="product-text">
           <div class="divider"></div>
           <h2>Was steckt im OT-Bag?</h2>
-          <p class="lead">Jeder Bag ist schwarz, robust und mit dem Adulteen-Signet „Today Tomorrow" bedruckt – ein Statement für den Übergang vom Jugendlichen zum Erwachsenen. Gefüllt mit ausgewählten Alltagsprodukten, macht sie jedem Teilnehmenden der Orientierungstage eine Freude und bleibt als nützlicher Begleiter im Alltag.</p>
+          <p class="lead">Jede Bag ist schwarz, robust und mit dem Adulteen-Signet „Today Tomorrow" bedruckt – ein Statement für den Übergang vom Jugendlichen zum Erwachsenen. Gefüllt mit ausgewählten Alltagsprodukten, macht sie jedem Teilnehmenden der Orientierungstage eine Freude und bleibt als nützlicher Begleiter im Alltag.</p>
         </div>
       </div>
     </div>
