@@ -134,10 +134,18 @@
 
   .ps-logo{
     margin-top:0;
+    margin-right:32px;
+  }
+  .ps-logo a{
+    display:inline-block;
+    background:var(--cream);
+    border-radius:8px;
+    padding:16px 24px;
   }
   .ps-logo img{
-    height:44px;
+    height:66px;
     width:auto;
+    display:block;
   }
   .about-grid{
     display:grid;
@@ -152,6 +160,19 @@
       align-items:flex-start;
     }
     .ps-logo{order:-1;margin-bottom:24px;}
+  }
+
+  .product-grid{
+    display:grid;
+    grid-template-columns:1fr 1.1fr;
+    gap:44px;
+    align-items:center;
+  }
+  .product-photo img{
+    border-radius:6px;
+  }
+  @media (max-width:820px){
+    .product-grid{grid-template-columns:1fr;}
   }
 
   /* TESTIMONIAL */
@@ -209,12 +230,13 @@
     align-items:center;
     flex-wrap:wrap;
   }
-  .contact-call{
+  .contact-below{
     display:flex;
     align-items:center;
+    justify-content:center;
     gap:14px;
     flex-wrap:wrap;
-    justify-content:center;
+    margin-top:32px;
   }
   .contact-info{
     text-align:left;
@@ -227,27 +249,12 @@
     font-family:'Poppins',sans-serif;
     font-weight:700;
   }
-  .contact-call .avatar{
+  .contact-below .avatar{
     width:56px;
     height:56px;
     border-radius:50%;
     object-fit:cover;
     border:2px solid var(--cream);
-    flex-shrink:0;
-  }
-  .contact-call .avatar-placeholder{
-    width:56px;
-    height:56px;
-    border-radius:50%;
-    border:2px solid var(--cream);
-    background:var(--dark);
-    color:var(--cream);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-    font-size:1rem;
     flex-shrink:0;
   }
   .btn{
@@ -320,22 +327,29 @@
 
   <section class="block">
     <div class="wrap">
-      <div class="divider"></div>
-      <h2>Was steckt im OT-Bag?</h2>
-      <p class="lead">Jede Bag ist schwarz, robust und mit dem Adulteen-Signet „Today Tomorrow" bedruckt – ein Statement für den Übergang vom Jugendlichen zum Erwachsenen. Gefüllt mit ausgewählten Alltagsprodukten, macht sie jedem Teilnehmenden der Orientierungstage eine Freude und bleibt als nützlicher Begleiter im Alltag.</p>
+      <div class="product-grid">
+        <div class="product-photo">
+          <img src="bag-lifestyle.jpg" alt="Junger Mann in schwarzer Kleidung hält die schwarze Adulteen OT-Bag mit Aufdruck 'Today Tomorrow'">
+        </div>
+        <div class="product-text">
+          <div class="divider"></div>
+          <h2>Was steckt im OT-Bag?</h2>
+          <p class="lead">Jede Bag ist schwarz, robust und mit dem Adulteen-Signet „Today Tomorrow" bedruckt – ein Statement für den Übergang vom Jugendlichen zum Erwachsenen. Gefüllt mit ausgewählten Alltagsprodukten, macht sie jedem Teilnehmenden der Orientierungstage eine Freude und bleibt als nützlicher Begleiter im Alltag.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <div class="cta cta-mini">
     <div class="wrap">
       <div class="btn-row">
-        <a class="btn btn-primary" href="mailto:benjamin.textor@present-service.ch?subject=OT-Bag%20Bestellung&body=Kanton%3A%20%0AAnzahl%20Teilnehmende%3A%20%0AAnsprechperson%3A%20">Jetzt bestellen</a>
+        <a class="btn btn-primary" href="mailto:benjamin.textor@present-service.ch?subject=OT-Bag%20Bestellung&body=Liebes%20Adulteen-Team%0A%0AGerne%20h%C3%A4tte%20ich%20mehr%20Information%20und%20w%C3%BCrde%20mich%20%C3%BCber%20eine%20Kontaktaufnahme%20freuen.">Jetzt bestellen</a>
         <a class="btn btn-secondary" href="tel:+41417400140">Anrufen</a>
       </div>
     </div>
   </div>
 
-  <section class="block dark">
+  <section class="block">
     <div class="wrap">
       <div class="divider"></div>
       <h2>Orientierungstage Kanton Zürich</h2>
@@ -357,7 +371,7 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block dark">
     <div class="wrap">
       <div class="about-grid">
         <div class="about-text">
@@ -366,7 +380,9 @@
           <p class="lead">Adulteen ist eine Marke von Present-Service, das seit vielen Jahren Sampling-Programme für junge Zielgruppen in der Schweiz umsetzt. Gemeinsam mit Kanton Zürich läuft die Zusammenarbeit bereits seit April 2026 – jetzt möchten wir den OT-Bag auch Teilnehmenden in weiteren Kantonen zugänglich machen.</p>
         </div>
         <div class="ps-logo">
-          <img src="present-service-logo.png" alt="Present-Service">
+          <a href="https://www.present-service.ch" target="_blank" rel="noopener">
+            <img src="present-service-logo.png" alt="Present-Service">
+          </a>
         </div>
       </div>
     </div>
@@ -377,14 +393,14 @@
       <h2>Bereit für Ihren Kanton?</h2>
       <p class="lead">Bestellen Sie den OT-Bag kostenlos für die Teilnehmenden Ihrer Orientierungstage, oder melden Sie sich für Fragen direkt bei uns.</p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="mailto:benjamin.textor@present-service.ch?subject=OT-Bag%20Bestellung&body=Kanton%3A%20%0AAnzahl%20Teilnehmende%3A%20%0AAnsprechperson%3A%20">Jetzt bestellen</a>
-        <div class="contact-call">
-          <img class="avatar" src="dominik-wey.jpg" alt="Dominik Wey">
-          <div class="contact-info">
-            <strong>Dominik Wey</strong>
-            <span>Geschäftsführer Present-Service – freut sich auf Ihren Anruf</span>
-          </div>
-          <a class="btn btn-secondary" href="tel:+41417400140">Anrufen</a>
+        <a class="btn btn-primary" href="mailto:benjamin.textor@present-service.ch?subject=OT-Bag%20Bestellung&body=Liebes%20Adulteen-Team%0A%0AGerne%20h%C3%A4tte%20ich%20mehr%20Information%20und%20w%C3%BCrde%20mich%20%C3%BCber%20eine%20Kontaktaufnahme%20freuen.">Jetzt bestellen</a>
+        <a class="btn btn-secondary" href="tel:+41417400140">Anrufen</a>
+      </div>
+      <div class="contact-below">
+        <img class="avatar" src="dominik-wey.jpg" alt="Dominik Wey">
+        <div class="contact-info">
+          <strong>Dominik Wey</strong>
+          <span>Geschäftsführer Present-Service</span>
         </div>
       </div>
     </div>
