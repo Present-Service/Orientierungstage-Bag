@@ -185,6 +185,11 @@
     .ps-logo{order:-1;margin-bottom:24px;}
   }
 
+  .about-cta{
+    margin-top:24px;
+    min-width:0;
+  }
+
   .product-grid{
     display:grid;
     grid-template-columns:1fr 1.1fr;
@@ -320,9 +325,10 @@
   }
   footer .wrap{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:8px;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:6px;
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -412,6 +418,7 @@
           <div class="divider"></div>
           <h2>Über uns</h2>
           <p class="lead">Adulteen ist eine Marke von Present-Service, das seit vielen Jahren Sampling-Programme für junge Zielgruppen in der Schweiz umsetzt. Gemeinsam mit Kanton Zürich läuft die Zusammenarbeit bereits seit April 2026 – jetzt möchten wir den OT-Bag auch Teilnehmenden in weiteren Kantonen zugänglich machen.</p>
+          <a class="btn btn-secondary about-cta" href="https://www.present-service.ch" target="_blank" rel="noopener">Present-Service.ch besuchen</a>
         </div>
         <div class="ps-logo">
           <a href="https://www.present-service.ch" target="_blank" rel="noopener">
@@ -445,6 +452,7 @@
   <footer>
     <div class="wrap">
       <span>Adulteen · ein Angebot von Present-Service Henckel von Donnersmarck & Co.</span>
+      <span>Lindenstrasse 3, 6340 Baar</span>
     </div>
   </footer>
 

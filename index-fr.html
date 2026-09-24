@@ -185,6 +185,11 @@
     .ps-logo{order:-1;margin-bottom:24px;}
   }
 
+  .about-cta{
+    margin-top:24px;
+    min-width:0;
+  }
+
   .product-grid{
     display:grid;
     grid-template-columns:1fr 1.1fr;
@@ -320,9 +325,10 @@
   }
   footer .wrap{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:8px;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:6px;
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -412,6 +418,7 @@
           <div class="divider"></div>
           <h2>À propos de nous</h2>
           <p class="lead">Adulteen est une marque de Present-Service, qui met en œuvre depuis de nombreuses années des programmes d’échantillonnage pour de jeunes publics en Suisse. La collaboration avec le canton de Zurich dure depuis avril 2026 – nous souhaitons désormais rendre le JI-Bag accessible aux participant·e·s d’autres cantons également.</p>
+          <a class="btn btn-secondary about-cta" href="https://www.present-service.ch" target="_blank" rel="noopener">Visiter present-service.ch</a>
         </div>
         <div class="ps-logo">
           <a href="https://www.present-service.ch" target="_blank" rel="noopener">
@@ -445,6 +452,7 @@
   <footer>
     <div class="wrap">
       <span>Adulteen · une offre de Present-Service Henckel von Donnersmarck & Co.</span>
+      <span>Lindenstrasse 3, 6340 Baar</span>
     </div>
   </footer>
 
